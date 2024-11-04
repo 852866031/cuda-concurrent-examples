@@ -25,3 +25,5 @@ Download the nsight-systems deb file from [NVIDIA](https://developer.nvidia.com/
 ```
 sudo dpkg -i nsight-systems-[VERSION].deb 
 ```
+Note The result will be generated in .nsys-rep
+You need to download it to a computer with GUI and nsight-host to view the results
