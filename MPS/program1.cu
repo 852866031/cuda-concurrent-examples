@@ -6,7 +6,7 @@ __global__ void kernel1() {
     long long int startClock = clock64();
     // Spin until the desired duration has passed
     while (clock64() - startClock < 100000000) { //cycles to spin
-        data[idx] += value;
+        
     }
 }
 

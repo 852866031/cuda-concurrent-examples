@@ -2,10 +2,13 @@
    - Run `nvidia-cuda-mps-control -d` to start the MPS control daemon in the background.
 
 2. **Compile Two CUDA Programs**
-   - Prepare and compile two separate CUDA programs that each run a kernel.
+   - Use ```make``` to compile the two programs.
 
 3. **Run Both Programs Under MPS**
-   - Execute both programs concurrently from separate terminals or scripts, using the `CUDA_MPS_ACTIVE_THREAD_PERCENTAGE` environment variable to manage resource allocation.
+   ```
+   CUDA_MPS_ACTIVE_THREAD_PERCENTAGE=50 sudo nsys profile --force-overwrite true -o MPS_profile ./program1 & CUDA_MPS_ACTIVE_THREAD_PERCENTAGE=50 ./program2 
+   ```
+    Execute both programs concurrently using the `CUDA_MPS_ACTIVE_THREAD_PERCENTAGE` environment variable to manage resource allocation.
 
 4. **Profile Using Nsight Systems**
    - Use `nsys profile` to profile the execution of each program and generate profiling reports.
