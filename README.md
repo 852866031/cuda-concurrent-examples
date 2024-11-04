@@ -21,5 +21,3 @@ Install the dependencies for nsight-systems and install the .deb file:
 sudo apt-get install libxcb-xinput0 libxcb-cursor0
 sudo dpkg -i nsight-systems-[VERSION].deb 
 ```
-Use ```nvcc cuda_streams.cu -o cuda_streams``` to compile and ```sudo nsys profile --force-overwrite true -o cuda_stream_profile ./cuda_streams``` to run
-Or you can also use the ```Makefile`` to run the examples.
