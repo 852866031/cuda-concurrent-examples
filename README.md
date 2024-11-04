@@ -17,9 +17,11 @@ Install the CUDA toolkit
 ```
 sudo apt install nvidia-cuda-toolkit
 ```
-Download the nsight-systems deb file from [NVIDIA](https://developer.nvidia.com/nsight-systems/get-started)
-Install the dependencies for nsight-systems and install the .deb file:
+Install the dependencies for nsight-systems
 ```
 sudo apt-get install libxcb-xinput0 libxcb-cursor0
+```
+Download the nsight-systems deb file from [NVIDIA](https://developer.nvidia.com/nsight-systems/get-started) and install
+```
 sudo dpkg -i nsight-systems-[VERSION].deb 
 ```
