@@ -1,7 +1,6 @@
 # cuda-concurrent-examples
-# cuda-concurrent-examples
 
-You need to download NVIDIA Driver, NVIDIA ToolKit and Nsight-systems to run the program
+Install NVIDIA packages
 ```
 //Install NVIDIA Driver
 sudo apt install ubuntu-drivers-common
