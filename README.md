@@ -1,5 +1,7 @@
 # cuda-concurrent-examples
+Each directory under this repo contains an example to run CUDA kernels concurrently.
 
+## Dependencies
 Install NVIDIA packages
 ```
 //Install NVIDIA Driver
