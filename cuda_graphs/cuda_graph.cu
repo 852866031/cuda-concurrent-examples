@@ -15,7 +15,7 @@ __global__ void B(int *data, int value) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     long long int startClock = clock64();
     // Spin until the desired duration has passed
-    while (clock64() - startClock < 1000000000) { // cycles to spin
+    while (clock64() - startClock < 10000000000) { // cycles to spin
         data[idx] += value;
     }
 }
@@ -24,7 +24,7 @@ __global__ void C(int *data, int value) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
     long long int startClock = clock64();
     // Spin until the desired duration has passed
-    while (clock64() - startClock < 1000000000) { // cycles to spin
+    while (clock64() - startClock < 10000000000) { // cycles to spin
         data[idx] += value;
     }
 }
